@@ -1,14 +1,20 @@
 var React = require('react');
 
 var WeatherForm = React.createClass({
-    getWeather: function(e) {
+    sendWeatherInfo: function(e) {
         e.preventDefault();
-        console.log('Get Weather');
+        var data = {
+            cityName: this.refs.cityName.value,
+            ifHide: false
+        }
+        if (data.cityName) {
+            this.props.onSearch(data);
+        }
     },
     render: function() {
         return (
             <div>
-                <form onSubmit={this.getWeather}>
+                <form onSubmit={this.sendWeatherInfo}>
                     <input type="text" ref="cityName" />
                     <button type='submit'>Get Weather</button>
                 </form>
