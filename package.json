@@ -31,7 +31,10 @@
     "eslint": "^3.2.0",
     "eslint-plugin-react": "^5.2.2",
     "extract-text-webpack-plugin": "^1.0.1",
+    "foundation-sites": "^6.2.3",
+    "jquery": "^2.2.1",
     "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   }
