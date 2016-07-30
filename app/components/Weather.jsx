@@ -14,9 +14,9 @@ var Weather = React.createClass({
             isLoading: true
         });
 
-        getTemp(data.cityName).then((degree) => {
+        getTemp(data.cityName).then(({degree, cityName}) => {
             this.setState({
-                cityName: data.cityName,
+                cityName: cityName,
                 degree: degree,
                 ifHide: data.ifHide,
                 isLoading: false
