@@ -4,9 +4,12 @@ var Navbar = require('Navbar');
 var Main = (props) => {
     return (
         <div>
-            <Navbar />
-            <h1>Main Component</h1>
-            {props.children}
+            <Navbar/>
+            <div className='row'>
+                <div className='columns medium-6 large-4 small-centered'>
+                    {props.children}
+                </div>
+            </div>
         </div>
     );
 };

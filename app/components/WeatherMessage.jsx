@@ -10,7 +10,7 @@ var WeatherMessage = (props) => {
         };
     return (
         <div style={hide}>
-            <h1>It is {degree} in {cityName}!</h1>
+            <h3>It is {degree} in {cityName}!</h3>
         </div>
     );
 };
